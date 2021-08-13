@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy birthday</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/307/307629.png"  type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="logo"><a href="#">Happy birthday</a></div>
+            <ul id="nav" class="pull-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Moblie menu button-->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+        </div>
+        <div id="slider">
+            <h4 class="slider-content">Best Wishes For You</h4>
+        </div>
+        <div id="content">
+            <div id="about" class="content-section">
+                <h2 class="section-heading text-center">ABOUT</h2>
+                <p class="about-text">Vì tình hình dịch bệnh khá nghiêm trọng nên có lẽ sinh nhật lần này khó mà tổ chức, kèo cột chi được. Cho nên tôi làm website này tặng cho bạn với mong muốn bạn vui vẻ thoải mái trong ngày hôm nay, bởi vì mới học nên cũng chưa làm được gì nhiều nhưng mong bạn xem nó như là một món quà nhỏ động viên tinh thần ngày bạn sang tuổi mới nhé. </p>
+                <div class="sub-slider mt-32">
+                    <img class="sub-img"src="./assets/img/sub-slider.jpg" alt="Happy birthday">
+                </div>
+                
+            </div>
+
+            <div id="members" class="content-section">
+                <h2 class="section-heading text-center">MEMBERS</h2>
+                <p class="section-sub-heading text-center">Be the one!</p>
+                <div class="row members-list">
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="members-name">T.Diệp</p>
+                        <img src="./assets/img/Members/members1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="members-name">Dâu tây</p>
+                        <img src="./assets/img/Members/members2.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="members-name">Pé Bi</p>
+                        <img src="./assets/img/Members/members3.jpg" alt="Name" class="member-img">
+                    </div>
+                </div>
+                <p class="about-text">Chúc bạn luôn mạnh khỏe nhé, sống vui sống khỏe, không hối hận với những quyết định mình đưa ra, luôn gặp nhiều may mắn và luôn tươi cười hạnh phúc nhé! Hí hí. </p>
+                <p class="about-text-special">3 người các bạn sinh cùng giờ, cùng ngày, cùng tháng, cùng năm nên tôi chúc 1 lượt luôn nhá :D</p>
+            </div>
+            <div id="contact" class="content-section">
+                <h1 class="section-heading text-center">Contact</h1>
+                <br>
+                <p class="section-sub-heading text-center">Fun? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                    </div>
+                    <div class="col col-half s-col-full contact-form">
+                        <form class="form-fill" action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full">
+                                    <input type="text" name="" placeholder="Name" required id="contact-name" class="form-control">
+                                </div>
+                                <div class="col col-half s-col-full s-mt-16">
+                                    <input type="email" name="" placeholder="Email" required id="contact-email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-16">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Messenge" required id="contact-messege" class="form-control">
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <input class="contact-submit-btn pull-right" type="submit" value="SEND">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copy-right">Powered by <a href="">w3.css</a></p>
+    </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        //Đóng mở mobile menu
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        //Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        // console.log(menuItems);
+        
+        for (var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.addEventListener('click',function () {
+                header.style.height = null;
+            })
+        }
+        
+    </script>
+</body>
+</html>
